@@ -1,0 +1,239 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int userAge;
+    
+    cout << "Enter your age: ";
+    cin >> userAge;
+
+    int Age_limit = userAge;
+    if(Age_limit >= 18)
+    {
+        cout<<"Eligable";
+    }
+    else
+    {
+        cout<<"Not";
+    }
+    
+    
+}
+***************************************************************************
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    
+    int userInput;
+    cout << "Enter an integer: ";
+    cin >> userInput;
+    
+    int check_range = userInput;
+    
+    if(check_range >=10 && check_range<=50)
+    {
+        cout<<"In range";
+    }
+    else
+    {
+        cout<<"Not in range";
+    }
+    
+    
+    
+    
+    return 0;
+}
+
+***********************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1,num2;
+    
+    cout<<"Enter num1"<<endl;
+    cin>>num1;
+    cout<<"Enter num2"<<endl;
+    cin>>num2;
+    
+    if(num1>num2)
+    {
+        cout<<"Num1 is greater than num2";
+    }
+    if(num2>num1)
+    {
+       cout<<"Num2 is greater than num1";
+    }
+  
+
+    return 0;
+}
+
+*********************************************************************
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+    
+    int score1, score2, score3;
+    
+    cout << "Enter three exam scores (separated by spaces): ";
+    cin >> score1 >> score2 >> score3;
+   
+    int average_score= (score1+score2+score3)/3;
+    
+    if(average_score >=60)
+    {
+        cout <<"passing score";
+    }
+    else
+    {
+        cout<<"average score is less than passing socre";
+    }
+    
+
+    return 0;
+}
+
+********************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int student_score;
+    
+    cout << "Enter the student's score: ";
+    cin >> student_score;
+    
+    if(student_score >= 90 && student_score <=100 )
+    {
+        cout<<"Grade A";
+    }
+    else if (student_score >= 75 && student_score < 90)
+    {
+        cout<<"Grade B";
+    }       
+    else if (student_score >= 60 && student_score < 75)
+    {
+        cout<<"Grade C";
+    }
+    else if (student_score >= 45 && student_score < 60)
+    {
+        cout<<"Grade D";
+    }  
+    else if (student_score >= 0 && student_score < 45)
+    {
+        cout<<"Grade F";
+    }
+    else
+    {
+        cout<<"The passing student score limit is incorrect";
+    }
+}
+
+*********************************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int number;
+    
+    cout << "Enter the student's score: ";
+    cin >> number;
+    
+    int even_number = number%2==0;
+    
+    if(even_number && even_number/5)
+    {
+        cout<<"the mention condition is true";
+        
+    }
+    else
+    {
+        cout<<"condition false";
+    }
+}
+
+******************************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Total_days_in_year;
+    cout << "Enter a year: ";
+    cin >> Total_days_in_year;
+
+    if (Total_days_in_year >365 && Total_days_in_year < 367) 
+    {
+        cout <<" is a leap year.";
+    } 
+    else 
+    {
+        cout<<"is not a leap year";
+    }
+
+    return 0;
+}
+
+*********************************************************************************
+
+#include <iostream>
+using namespace std;
+
+
+int main() {
+   
+   float gpa, attendence;
+    
+    cout<<"Enter GPA ";
+    cin>>gpa;
+    cout<<"Enter Attendence ";
+    cin>>attendence;
+    
+    if(gpa >= 3.5 && gpa <= 4.0 && attendence >= 80 )
+    {
+        cout<<"Eligable for scholarship";
+    }
+    else
+    {
+        cout<<"Not eligable";
+    }
+
+    
+    return 0;
+}
+
+*******************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char character;
+
+    cout << "Enter a character: ";
+    cin >> character;
+   
+   if(character=='a' || character=='e' || character=='i' || character=='o' || character=='u' )
+   {
+       cout<<"Vowel character";
+   }
+   else
+   {
+       cout<<"consonants";
+   }
+   return 0;
+}

@@ -1,0 +1,96 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float x1, y1, x2, y2;
+
+    // Getting coordinates from the user
+    cout << "Enter x1 and y1 coordinates: ";
+    cin >> x1 >> y1;
+
+    cout << "Enter x2 and y2 coordinates: ";
+    cin >> x2 >> y2;
+
+    // Calculating the distance
+     float distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+
+    // Displaying the result
+   
+    // cout<< distance;
+    cout<<"the value of distance is:"<<distance;
+   
+
+    return 0;
+}
+
+***********************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float lengthInCentimeters;
+
+    // Getting length in centimeters from the user
+    cout << "Enter length in centimeters: ";
+    cin >> lengthInCentimeters;
+
+    // Converting length to meters and kilometers
+    float lengthInMeters = lengthInCentimeters / 100;
+    float lengthInKilometers = lengthInCentimeters / 100000;
+
+    // Displaying the converted lengths
+    cout << "Length in meters: " << lengthInMeters << endl;
+    cout << "Length in kilometers: " << lengthInKilometers<< endl;
+
+    return 0;
+}
+
+**********************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a, b;
+
+    // Getting values of a and b from the user
+    cout << "Enter the value of 'a': ";
+    cin >> a;
+
+    cout << "Enter the value of 'b': ";
+    cin >> b;
+
+    // Calculating the result of the polynomial
+    float result = a * a + 2 * a * b + b * b;
+
+    // Displaying the result
+    cout << "The result of the polynomial  is: " << result;
+
+    return 0;
+}
+
+************************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    float fahrenheit, celsius;
+
+    // Getting temperature in Fahrenheit from the user
+    
+    cout << "Enter temperature in Fahrenheit: ";
+    cin >> fahrenheit;
+
+    // Converting Fahrenheit to Celsius
+    celsius = (fahrenheit - 32) * 5.0 / 9.0;
+
+    // Displaying the converted temperature
+    cout << "Temperature in Celsius: " << celsius;
+
+    return 0;
+}
+
+
