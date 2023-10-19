@@ -1,0 +1,178 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // int day = 2;
+    int punjab, sindh, kpk, balochistan,population;
+    
+    cout<<"Enter population"<<endl;
+    cin>>population;
+    punjab=10000;
+    sindh=7000;
+    kpk=5000;
+    balochistan=3000;
+    
+  
+   
+    
+    switch (population) {
+        case 10000:
+            cout << "population in punjab is"<<punjab;
+            break;
+        case 7000:
+            cout << "population in sindh is"<<sindh;
+            break;
+        case 5000:
+            cout << "population in kpk is"<<kpk;
+            break;
+        case 3000:
+            cout << "population in balochistan is"<<balochistan;
+            break;
+        default:
+            cout << "Invalid";
+    }
+
+    return 0;
+}
+
+*********************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char a,e,i,o,u,casse;
+    cout<<"Enter Case"<<endl;
+    cin>>casse;
+    switch (casse) {
+        case 'a':
+            cout << "a is vowel";
+            break;
+        case 'e':
+            cout << "e is vowel";
+            break;
+        case 'i':
+            cout << "i is vowel";
+            break;
+        case 'o':
+            cout << "o is vowel";
+            break;
+        case 'u':
+            cout << "u  is vowel";
+            break;
+        default:
+            cout << "consonant";
+    }
+
+    return 0;
+}
+
+************************************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+    cout << "Enter a number: ";
+    cin >> number;
+
+    switch (number > 0 ? 1 : (number < 0 ? -1 : 0)) {
+        case 1:
+            cout << "number is Positive";
+            break;
+        case -1:
+            cout << "number is Negative";
+            break;
+        case 0:
+            cout << "number is Zero";
+            break;
+        default:
+            cout << "Invalid number";
+    }
+
+    return 0;
+}
+
+*****************************************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+ 
+   int age;
+   cout<<"Enter Age"<<endl;
+   cin>>age;
+   if(age<=12)
+   {
+       cout<<"child";
+   }
+   else if(age>12 && age<=19)
+   {
+       cout<<"Teenager";
+   }
+   else if(age>19 && age<= 60)
+   {
+       cout<<"Adult";
+   }
+   else
+   {
+       cout<<"invalid";
+   }
+
+    return 0;
+}
+
+******************************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+ 
+   int num1, num2, num3;
+   cout<<"Enter three numbers"<<endl;
+   cin>>num1>>num2>>num3;
+   if(num1>num2 && num1>num3)
+   {
+       cout<<"num1 is greater";
+   }
+   else if(num2>num1 && num2>num3)
+   {
+       cout<<"num2 is greater";
+   }
+   else if(num3>num1 && num3>num2)
+   {
+       cout<<"num3 is greater";
+   }
+   else
+   {
+       cout<<"invalid";
+   }
+
+    return 0;
+}
+
+***************************************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() {
+ 
+   char alphabit;
+   cout<<"Enter alphabit"<<endl;
+   cin>>alphabit;
+   if(alphabit=='a' || alphabit=='e' ||alphabit=='i' ||alphabit=='o' ||alphabit=='u')
+   {
+       cout<<"Vowel";
+   }
+   else
+   {
+       cout<<"Consonant";
+   }
+
+    return 0;
+}
+
