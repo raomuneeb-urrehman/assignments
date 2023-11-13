@@ -1,0 +1,129 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int n;
+
+    cout << "Enter the number of terms in the Fibonacci sequence: ";
+    cin >> n;
+
+    int first = 0, second = 1, next;
+
+    cout << "Fibonacci Sequence: ";
+
+    for (int i = 0; i < n; ++i) {
+        
+        cout << first << " ";
+
+        // Calculate the next Fibonacci number
+        next = first + second;
+
+        // Update values for the next iteration
+        first = second;
+        second = next;
+    }
+
+    return 0;
+}
+****************************************************
+#include <iostream>
+using namespace std;
+int main() {
+    // Function to calculate and print Pascal's Triangle
+    auto printPascalsTriangle = [](int n) {
+        for (int line = 0; line < n; line++) {
+            int coefficient = 1;
+            for (int i = 0; i <= line; i++) {
+                std::cout << coefficient << " ";
+                coefficient = coefficient * (line - i) / (i + 1);
+            }
+            std::cout << std::endl;
+        }
+    };
+
+    int numRows;
+
+    cout << "Enter the number of rows for Pascal's Triangle: ";
+    cin >> numRows;
+
+    printPascalsTriangle(numRows);
+
+    return 0;
+}
+*********************************************************
+#include <iostream>
+using namespace std;
+int main() {
+    // Function to check if a number is prime
+    auto isPrime = [](int num) {
+        if (num <= 1) {
+            return false;
+        }
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    };
+
+    int sum = 0;
+
+    for (int i = 1; i <= 50; i++) {
+        if (isPrime(i)) {
+            sum += i;
+        }
+    }
+
+    cout << "Sum of prime numbers from 1 to 50 is: " << sum << std::endl;
+
+    return 0;
+}
+**************************************************************
+#include <iostream>
+using namespace std;
+
+int main() {
+    int rows = 5;
+
+    for (int i = 1; i <= rows; i++) {
+        // Print numbers in each row
+        for (int j = 1; j <= i; j++) {
+            cout << j << " ";
+        }
+
+        cout << std::endl;
+    }
+
+    return 0;
+}
+*****************************************************
+#include <iostream>
+using namespace std;
+int main() {
+    int rows = 4;
+
+    for (int i = 1; i <= rows; i++) {
+        if (i == 3) {
+            continue;
+        }
+
+        for (int j = 1; j <= i; j++) {
+            // Calculate the value based on the row number
+            int value = i;
+            cout << value << " ";
+        }
+
+        // Move to the next line after printing each row
+            cout <<endl;
+
+        // Additional condition to print a specific pattern for the fourth row
+        if (i == 4) {
+            for (int k = 1; k <= 6; k++) {
+                 cout << "6 ";
+            }
+            cout << endl;
+        }
+    }
+
+    return 0;
+}
